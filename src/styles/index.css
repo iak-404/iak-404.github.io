@@ -1,0 +1,46 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./sidebar.css);
+@import url(./home.css);
+@import url(./about.css);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  display:flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Globale Schriftart */
+  font-size: 16px;                 /* Basis-Schriftgröße */
+  line-height: 1.5;
+  color: #333;                     /* Textfarbe */
+  max-height: 100vh;                    /* Body immer die volle Höhe */
+  width: 100%;
+  overflow: hidden;              /* Kein horizontaler Scroll */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Das Root-Element soll den gesamten Bildschirm abdecken */
+}
+
+main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(1, 52, 1);
+  color:rgb(0, 0, 82);
+  z-index: 1;
+}
+
+.main-container{
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 39, 20);
+}
+
