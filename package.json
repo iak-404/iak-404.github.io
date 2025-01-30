@@ -1,7 +1,7 @@
 {
   "name": "first_projekt",
   "version": "0.1.0",
-  "homepage": "https://iak-404.github.io//iak-404",
+  "homepage": "https://iak-404.github.io",
   "private": true,
   "dependencies": {
     "ajv": "^8.17.1",
