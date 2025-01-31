@@ -20,12 +20,40 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                                <div className="card-body-left">
-
-                                </div>
-                                <div className="card-body-right">
-
-                                </div>
+                                <table>
+                                    <thead>
+                                        <tr>    
+                                            <th>Kenntnisse</th>
+                                            <th>Bewertung</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <td>HTML/CSS</td>
+                                            <td>sehr gut</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Python</td>
+                                            <td>gut</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C#</td>
+                                            <td>Grundkenntnisse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MySQL/MariaDB</td>
+                                            <td>gut</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JavaScript</td>
+                                            <td>Grundkenntnisse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JSON</td>
+                                            <td>Grundkenntnisse</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
