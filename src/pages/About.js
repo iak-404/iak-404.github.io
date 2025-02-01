@@ -23,6 +23,11 @@ const About = () => {
                             <div className="card-body">
                                 <table>
                                     <thead>
+                                        <tr>
+                                            <th colSpan={2}>Coding/Programming</th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
                                         <tr>    
                                             <th>Kenntnisse</th>
                                             <th>Bewertung</th>
@@ -52,6 +57,27 @@ const About = () => {
                                         <tr>
                                             <td>JSON</td>
                                             <td>Grundkenntnisse</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <th colSpan={2}>Sprachen</th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr>    
+                                            <th>Kenntnisse</th>
+                                            <th>Bewertung</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>   
+                                        <tr>
+                                            <td>Deutsch</td>
+                                            <td>Muttersprache</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Englisch</td>
+                                            <td>gut</td>
                                         </tr>
                                     </tbody>
                                 </table>
