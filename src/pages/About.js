@@ -1,8 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/about.css';
 import pbPic from '../assets/images/pbpic.png';
+import gaming from '../assets/images/hobbys/gaming.png';
+import music from '../assets/images/hobbys/music.png';
+
+
 
 const About = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = () => {
+        setIsActive(!isActive);
+        buttonClicked();
+    }
+
+    function buttonClicked(){
+        const hover = document.getElementById('hover-container')
+
+        if(!isActive){
+            hover.style.visibility = 'visible';
+        }else{
+            hover.style.visibility = 'hidden';
+        }
+    }
+
+
     return( 
         <div className="about">
             <div className="about-container">
@@ -86,9 +108,26 @@ const About = () => {
                     </div>
                 </div>
                 <div className="circle-container">
-                    <div className="circle-border">
-                        <div className="circle">
-                                <div className="circle-text"> Hover me! </div>
+                    <div className="circle-container-top">
+                        <button className={`button-hobbys ${isActive ? "button-hobbys-active" : "button-hobbys"}`}
+                        onClick={handleClick} id="button-top">
+                                <p className={`hobby-text ${isActive ? "hobby-text-active" : ""}`}>
+                                    For <br/> Hobbys, <br/> click <br/> me!
+                                </p>
+                        </button> 
+                    </div>
+                    <div className="circle-container-bot">
+                        <div className="hobby-img">
+                            <div className="hover-container" id="hover-container">
+                                <div className="gaming">
+                                    <img src={gaming} alt="gaming"/>
+                                    <p className="tooltip">Gaming</p>
+                                </div>
+                                <div className="music">   
+                                    <img src={music} alt="music headphones"/>
+                                    <p className="tooltip">Musik hören</p>
+                                </div>
+                            </div>                       
                         </div>
                     </div>
                 </div>
