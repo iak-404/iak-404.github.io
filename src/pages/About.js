@@ -3,6 +3,7 @@ import '../styles/about.css';
 import pbPic from '../assets/images/pbpic.png';
 import gaming from '../assets/images/hobbys/gaming.png';
 import music from '../assets/images/hobbys/music.png';
+import coding from '../assets/images/hobbys/programming.png';
 
 
 
@@ -120,12 +121,16 @@ const About = () => {
                         <div className="hobby-img">
                             <div className="hover-container" id="hover-container">
                                 <div className="gaming">
-                                    <img src={gaming} alt="gaming"/>
+                                    <img src={gaming} alt="gaming pic"/>
                                     <p className="tooltip">Gaming</p>
                                 </div>
                                 <div className="music">   
-                                    <img src={music} alt="music headphones"/>
+                                    <img src={music} alt="music headphones pic"/>
                                     <p className="tooltip">Musik hören</p>
+                                </div>
+                                <div className="coding">   
+                                    <img src={coding} alt="coding pic"/>
+                                    <p className="tooltip">Coding/Programming</p>
                                 </div>
                             </div>                       
                         </div>

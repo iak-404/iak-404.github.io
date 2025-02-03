@@ -22,13 +22,9 @@
     z-index: 0;
 }
 
-.text{
+.projects-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: rgb(1, 129, 1);
-    text-shadow: 0 0 1rem red;
+    height: 100%;
+    width: 100%;
     z-index: 1;
 }

@@ -213,7 +213,6 @@ tbody tr:nth-child(even){
 .hobby-img{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -221,25 +220,27 @@ tbody tr:nth-child(even){
 .hover-container{
     display: flex;
     justify-content: center;
-    align-items: center;
     visibility: hidden;
     height: 100%;
     width: 100%;
 }
 
 .gaming,
-.music{
+.music,
+.coding{
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .hover-container .gaming img,
-.hover-container .music img{
-    background-color: gray;
+.hover-container .music img,
+.hover-container .coding img{
+    background-color: rgba(128, 128, 128, 0.397);
     width: 10rem;
     height: 10rem;
     margin: 1rem;
+    border-radius: 2rem;
 }
 
 .tooltip{
@@ -247,19 +248,23 @@ tbody tr:nth-child(even){
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: red;
+    background-color: rgba(75, 0, 0, 0.56);
     position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 160, 0);
     width: 10rem;
     height: 10rem;
+    border-radius: 2rem;
     opacity: 0;
     transition: opacity 0.3s ease-in, transform 0.3s ease-out;
-    transform: translateY(5rem);
+    transform: translateY(9.5rem);
     pointer-events: none;
 }
 
 .hover-container img:hover + .tooltip{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-0.5rem);
 }
 
 
